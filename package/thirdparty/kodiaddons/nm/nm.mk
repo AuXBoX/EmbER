@@ -10,6 +10,8 @@ NM_SITE_METHOD = git
 NM_INSTALL_STAGING = NO
 NM_INSTALL_TARGET = YES
 
+NM_DEPENDENCIES = kodi
+
 define NM_INSTALL_TARGET_CMDS
 	mkdir -p $(TARGET_DIR)/usr/share/kodi/addons/script.linux.nm
 	cp -rf $(@D)/* $(TARGET_DIR)/usr/share/kodi/addons/script.linux.nm
