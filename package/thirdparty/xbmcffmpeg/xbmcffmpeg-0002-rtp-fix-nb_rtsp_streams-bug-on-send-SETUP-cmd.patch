@@ -11,7 +11,7 @@ diff --git a/libavformat/rtsp.c b/libavformat/rtsp.c
 index 5212dde..96d3878 100644
 --- a/libavformat/rtsp.c
 +++ b/libavformat/rtsp.c
-@@ -481,7 +481,7 @@ static void sdp_parse_line(AVFormatContext *s, SDPParseState *s1,
+@@ -519,7 +519,7 @@
          break;
      case 'a':
          if (av_strstart(p, "control:", &p)) {
@@ -20,3 +20,4 @@ index 5212dde..96d3878 100644
                  if (!strncmp(p, "rtsp://", 7))
                      av_strlcpy(rt->control_uri, p,
                                 sizeof(rt->control_uri));
+
