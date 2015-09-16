@@ -6,11 +6,11 @@
 
 KODI_VERSION = $(call qstrip,$(BR2_PACKAGE_KODI_REV))
 KODI_SITE_METHOD = git
-KODI_SITE = git://github.com/CoreTech-Development/xbmc.git
+KODI_SITE = git://github.com/EmbER-Dev/Kodi.git
 KODI_INSTALL_STAGING = YES
 KODI_INSTALL_TARGET = YES
 
-KODI_DEPENDENCIES = host-lzo host-sdl_image
+KODI_DEPENDENCIES = host-lzo host-sdl_image libsquish
 
 KODI_CONF_OPT += --enable-neon --enable-gles --disable-sdl --disable-x11 --disable-xrandr \
   --disable-projectm --enable-debug --disable-joystick --with-cpu=cortex-a9

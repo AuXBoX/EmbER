@@ -94,12 +94,12 @@ comment "Kodi Build Options"
 
 config BR2_PACKAGE_KODI_REV
 	string "Github Revision"
-	default "kodi-14.0"
+	default "kodi-15.1"
 	help
 	  This option will set the github revision.
 
-	  Github: "git://github.com/CoreTech-Development/xbmc.git"
-	  Default: "kodi-14.0"
+	  Github: "git://github.com/EmbER-Dev/Kodi.git"
+	  Default: "kodi-15.1"
 	  Beware: Changing this could break patchs
 
 comment "Kodi Customization Options"
